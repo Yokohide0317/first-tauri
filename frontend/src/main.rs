@@ -16,7 +16,7 @@ extern "C" {
 #[function_component(App)]
 pub fn app() -> Html {
     let welcome = use_state_eq(|| "".to_string());
-    let name = use_state_eq(|| "World".to_string());
+    let name = use_state_eq(|| "Tauri".to_string());
 
     // Execute tauri command via effects.
     // The effect will run every time `name` changes.
